@@ -14,8 +14,8 @@ class Produtos extends MY_Controller {
         parent::__construct();
         
         $this->load->model('produtos_model');
-
-        $this->output->enable_profiler(TRUE);
+        
+        //$this->output->enable_profiler(TRUE);
     }
 
     /**
@@ -60,5 +60,35 @@ class Produtos extends MY_Controller {
         $this->data['conteudo'] = $this->load->view('index', $this->data, TRUE);
         $this->load->view('layout/layout', $this->data);
     }
-
+    
+    public function cadastrar()
+    {
+        $this->data['conteudo'] = $this->load->view('cadastrar', $this->data, TRUE);
+        $this->load->view('layout/layout', $this->data);  
+    }
+    
+    public function salvar_cadatro()
+    {
+        $this->load->view('layout/layout', $this->data);
+    }
+    
+    public function editar($id)
+    {
+       $this->load->view('layout/layout', $this->data); 
+    }
+    
+    public function salvar_edicao()
+    {
+        $this->load->view('layout/layout', $this->data);
+    }
+    
+    public function detalhes($id)
+    {
+        $this->load->view('layout/layout', $this->data);
+    }
+    
+    public function remover($id)
+    {
+        $this->load->view('layout/layout', $this->data);
+    }
 }
