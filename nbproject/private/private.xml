@@ -4,8 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/wamp/www/estudotellks/application/config/autoload.php</file>
+            <file>file:/C:/wamp/www/estudotellks/application/helpers/comum_helper.php</file>
+            <file>file:/C:/wamp/www/estudotellks/application/views/layout/layout.php</file>
+            <file>file:/C:/wamp/www/estudotellks/application/modules/autores/controllers/autores.php</file>
+            <file>file:/C:/wamp/www/estudotellks/application/core/MY_Controller.php</file>
             <file>file:/C:/wamp/www/estudotellks/application/modules/produtos/models/produtos_model.php</file>
-            <file>file:/C:/wamp/www/estudotellks/application/modules/produtos/controllers/produtos.php</file>
         </group>
     </open-files>
 </project-private>

@@ -6,7 +6,8 @@
     <div class="row">
         <div class="col-lg-12">
             
-                <h3><?php echo $this->session->flashdata('sucesso');?></h3>
+                <p><?php echo $this->session->flashdata('mensagem');?></p>
+                               
                 <!-- O conteúdo dos métodos é renderizado aqui. -->
                 <?php if (isset($conteudo)) { echo $conteudo; } ?>
 

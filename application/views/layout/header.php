@@ -15,6 +15,12 @@
     <?php echo link_tag('assets/bower_components/morrisjs/morris.css'); ?>
     <?php echo link_tag('assets/bower_components/font-awesome/css/font-awesome.min.css'); ?>
     
+    <?php echo link_tag('assets/css/jquery.auto-complete.css'); ?>
+
+
+
+
+
     
 </head>
 <body>
@@ -38,31 +44,57 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="#"><i class="fa fa-book"></i> Produtos<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-book"></i> Livros<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="../produtos"><i class="fa fa-list "></i> Listar</a>
+                                    <a href="<?php echo site_url(); ?>/livros"><i class="fa fa-list "></i> Listar</a>
                                 </li>
                                 <li>
-                                    <a href="../produtos/cadastrar"><i class="fa  fa-plus"></i> Adicionar</a>
+                                    <a href="<?php echo site_url(); ?>/livros/cadastrar"><i class="fa  fa-plus"></i> Adicionar</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
 
                         <li>
-                            <a href="#"><i class="fa  fa-user"></i> Categorias<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa  fa-user"></i> Autores<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="../categorias"><i class="fa fa-list "></i> Listar</a>
+                                    <a href="<?php echo site_url(); ?>/autores"><i class="fa fa-list "></i> Listar</a>
                                 </li>
                                 <li>
-                                    <a href="../categorias/cadastrar"><i class="fa  fa-plus"></i> Adicionar</a>
+                                    <a href="<?php echo site_url(); ?>/autores/cadastrar"><i class="fa  fa-plus"></i> Adicionar</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>                        
-
+                         
+                        <li>
+                            <a href="#"><i class="fa  fa-language"></i> Gêneros<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo site_url(); ?>/generos"><i class="fa fa-list "></i> Listar</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo site_url(); ?>/generos/cadastrar"><i class="fa  fa-plus"></i> Adicionar</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>  
+                        
+                        <li>
+                            <a href="#"><i class="fa  fa-language"></i> Editoras<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo site_url(); ?>/editoras"><i class="fa fa-list "></i> Listar</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo site_url(); ?>/editoras/cadastrar"><i class="fa  fa-plus"></i> Adicionar</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>    
+                        
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->

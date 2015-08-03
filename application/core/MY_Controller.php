@@ -15,11 +15,17 @@ class MY_Controller extends MX_Controller {
         $this->data['nome_sistema'] = "TELLKS";     
     }
     
-    public function get_offset($page, $show) {
-        return ($page - 1) * $show;
-    }
+    
+    function _response($status, $arr = array()) {
+        
+        $response = array('result' => $status);
+        if (is_array($arr)) {
+            $response = array_merge($response, $arr);
+        } else { // assume que é uma mensagem
+            $response['message'] = $arr;
+        }
 
-    public function get_show_number() {
-        return ($this->input->get('show')) ? $this->input->get('show') : 5;
+        $this->output->set_content_type('application/json');
+        $this->output->set_output(json_encode($response));
     }
 }
